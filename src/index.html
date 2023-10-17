@@ -6,17 +6,17 @@
     <title>Sandeep Web Dev</title>
 </head>
 <body>
-    <div class="h-screen flex justify-center items-center bg-black text-white" id="hero">
+    <div class="h-screen flex justify-center items-center bg-secondary-500 text-white" id="hero">
         <div>
-            <h1 class="text-5xl mb-2">Sandeep Singh</h1>
-            <p class="text-lg mb-1">Your favorite brown web developer</p>
-            <button type="button" class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-2 focus:ring-primary-300 font-medium rounded px-3 py-2.5 mr-2 mb-2 focus:outline-none">Ping me!</button>
+            <h1 class="text-5xl mb-1">Sandeep Singh</h1>
+            <p class="text-lg mb-3">Your favorite brown developer</p>
+            <a href="#contact" class="block w-fit text-white bg-primary-700 hover:bg-primary-800 focus:ring-2 focus:ring-primary-300 font-medium rounded px-3 py-2.5 mr-2 mb-2 focus:outline-none">Ping me!</a>
         </div>
     </div>
 
-    <main class="bg-white">
+    <main class="bg-primary-500 text-secondary-500">
         <div class="py-16" id="about">
-            <h2 class="text-5xl text-primary-600 font-medium mb-12 text-center">Why me?</h2>
+            <h2 class="text-5xl text-secondary-500 font-medium mb-12 text-center">Why me?</h2>
 
             <div class="grid grid-cols-2 w-4/5 mx-auto mb-4">
                 <div>
@@ -25,7 +25,7 @@
                 <div>
                     <p class="leading-relaxed mb-4">Need a website but don't know who to go to? Have an existing site but want an overhaul? Message me to get started!<br><br>I believe the simple things in life are the most valuable. The same goes for websites. Simple technology and a clean design will have the strongest impression towards your visitors. I take this approach as it saves development time, reduces hosting costs, outputs a lighter website, and dramatically speeds up page load time. Work with me to make the internet great again!</p>
 
-                    <a href="#contact" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-primary-600 bg-transparent rounded border-2 border-primary-600 hover:bg-primary-800 hover:border-primary-800 hover:text-primary-200 focus:ring-2 focus:outline-none focus:ring-primary-300">
+                    <a href="#contact" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-secondary-500 bg-transparent rounded border-2 border-secondary-500 hover:bg-secondary-700 hover:border-secondary-700 hover:text-secondary-200 focus:ring-2 focus:outline-none focus:ring-secondary-300">
                         Get started!
                         <i data-feather="arrow-right" stroke="currentColor" stroke-width="2" class="mx-auto"></i>
                     </a>
@@ -33,114 +33,72 @@
             </div>
         </div>
 
-        <div class="bg-primary-500 text-white py-16" id="benefits">
-            <h2 class="text-5xl font-medium mb-12 text-center">Website benefits</h3>
+        <div class="py-16" id="benefits">
+            <h2 class="text-5xl text-secondary-500 font-medium mb-12 text-center">Website benefits</h3>
 
             <ul class="grid grid-cols-3 justify-items-center leading-relaxed">
-                <li class="text-center mb-12 p-2 w-4/5">
-                    <i data-feather="feather" stroke="#c6ac8f" stroke-width="1" class="w-[100px] h-[100px] mx-auto mb-1"></i>
-                    <h4 class="text-2xl">Lightweight Site</h4>
-                    <p>Incorporating only necessary code, your website will be incredibly light!</p>
-                </li>
-                <li class="text-center mb-12 p-2 w-4/5">
-                    <i data-feather="smartphone" stroke="#c6ac8f" stroke-width="1" class="w-[100px] h-[100px] mx-auto mb-1"></i>
-                    <h4 class="text-2xl">Mobile Friendly</h4>
-                    <p>Mobile designs isn't a question, it's a must in our modern world.</p>
-                </li>
-                <li class="text-center mb-12 p-2 w-4/5">
-                    <i data-feather="zap" stroke="#c6ac8f" stroke-width="1" class="w-[100px] h-[100px] mx-auto mb-1"></i>
-                    <h4 class="text-2xl">Quick Page Load</h4>
-                    <p>With a lite site connecting to minimal services, page load time is instantaneous.</p>
-                </li>
-                <li class="text-center mb-12 p-2 w-4/5">
-                    <i data-feather="pen-tool" stroke="#c6ac8f" stroke-width="1" class="w-[100px] h-[100px] mx-auto mb-1"></i>
-                    <h4 class="text-2xl">Clean Design</h4>
-                    <p>No need for distracting over-the-top designs.</p>
-                </li>
-                <li class="text-center mb-12 p-2 w-4/5">
-                    <i data-feather="code" stroke="#c6ac8f" stroke-width="1" class="w-[100px] h-[100px] mx-auto mb-1"></i>
-                    <h4 class="text-2xl">Simple Tech</h4>
-                    <p>Simple code makes dev time...simple.</p>
-                </li>
-                <li class="text-center p-2 w-4/5">
-                    <i data-feather="tool" stroke="#c6ac8f" stroke-width="1" class="w-[100px] h-[100px] mx-auto mb-1"></i>
-                    <h4 class="text-2xl">Easy Maintanace</h4>
-                    <p>With less moving parts brings less mantainance.</p>
-                </li>
+                {% for benefit in benefits.items %}
+                    <li class="text-center mb-12 p-2 w-4/5">
+                        <i data-feather="{{ benefit.icon }}" stroke="#252422" stroke-width="1" class="w-[100px] h-[100px] mx-auto mb-1"></i>
+                        <h4 class="text-2xl">{{ benefit.title }}</h4>
+                        <p>{{ benefit.desc }}</p>
+                    </li>
+                {% endfor %}
             </ul>
         </div>
     
         <div class="py-16" id="showcase">
-            <h2 class="text-5xl text-primary-600 font-medium mb-12 text-center">Project Showcase</h2>
+            <h2 class="text-5xl text-secondary-500 font-medium mb-12 text-center">Project Showcase</h2>
             
             <div class="flex justify-evenly">
-                <div class="max-w-sm bg-primary-500 text-white border border-black rounded shadow">
-                    <a href="">
-                        <img src="/img/Loid-Forger_Twilight_Spy-x-Family-8.png" alt="[image]" srcset="" class="rounded-t">
-                    </a>
-
-                    <div class="p-4">
-                        <a href="">
-                            <h4 class="text-2xl font-bold mb-2 tracking-light">Splat Builder</h4>
+                {% for project in projects.items %}
+                    <div class="max-w-sm bg-secondary-500 text-white border border-black rounded shadow">
+                        <a href="{{ project.url }}">
+                            <img src="/img/{{ project.image }}" alt="{{ project.image }} thumbnail" class="rounded-t">
                         </a>
 
-                        <p class="mb-3">A place to build and save your gears and loadouts for the Splatoon 3 video game.</p>
-                        <a href="#contact" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-secondary-300 bg-transparent rounded border-2 border-secondary-300 hover:bg-secondary-800 hover:border-secondary-800 hover:text-secondary-200 focus:ring-2 focus:outline-none focus:ring-secondary-300">
-                            Read more
-                            <i data-feather="arrow-right" stroke="currentColor" stroke-width="2" class="mx-auto"></i>
-                            <!-- <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                            </svg> -->
-                        </a>
+                        <div class="p-4">
+                            <a href="{{ project.url }}">
+                                <h4 class="text-2xl font-bold mb-2 tracking-light">{{ project.name }}</h4>
+                            </a>
+
+                            <p class="mb-3">{{ project.desc }}</p>
+                            <a href="{{ project.url }}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-accent-500 bg-transparent rounded border-2 border-accent-500 hover:bg-accent-800 hover:border-accent-800 hover:text-white focus:ring-2 focus:outline-none focus:ring-accent-300">
+                                Visit project
+                                <i data-feather="arrow-right" stroke="currentColor" stroke-width="2" class="mx-auto"></i>
+                                <!-- <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg> -->
+                            </a>
+                        </div>
                     </div>
-                </div>
-
-                <div class="max-w-sm bg-primary-500 text-white border border-black rounded shadow">
-                    <a href="https://animeflow.netlify.app/">
-                        <img src="/img/anime_flow-thumbnail.png" alt="Anime Flow thumbnail" class="rounded-t">
-                    </a>
-
-                    <div class="p-4">
-                        <a href="https://animeflow.netlify.app/">
-                            <h4 class="text-2xl font-bold mb-2 tracking-light">Anime Flow</h4>
-                        </a>
-
-                        <p class="mb-3">An interactive quiz to find the next anime to watch, based on a popular flowchart.</p>
-                        <a href="https://animeflow.netlify.app/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-secondary-300 bg-transparent rounded border-2 border-secondary-300 hover:bg-secondary-800 hover:border-secondary-800 hover:text-secondary-200 focus:ring-2 focus:outline-none focus:ring-secondary-300">
-                            Read more
-                            <i data-feather="arrow-right" stroke="currentColor" stroke-width="2" class="mx-auto"></i>
-                            <!-- <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                            </svg> -->
-                        </a>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     
-        <div class="bg-primary-500 text-white p-16" id="contact">
-            <h2 class="text-5xl font-medium mb-12 text-center">Contact</h2>
+        <div class="p-16" id="contact">
+            <h2 class="text-5xl font-medium mb-12 text-secondary-500 text-center">Contact</h2>
 
             <form action="https://api.staticforms.xyz/submit" method="post" class="grid grid-cols-2 gap-x-2 w-1/2 mx-auto">
                 <div>
                     <label for="name" class="block">Name:</label>
-                    <input type="text" name="name" id="name" class="w-full mb-4 text-black rounded shadow-sm focus:ring focus:ring-secondary-600 focus:ring-opacity-75 focus:border-transparent" required>
+                    <input type="text" name="name" id="name" class="w-full mb-4 rounded shadow-sm focus:ring focus:ring-secondary-600 focus:ring-opacity-75 focus:border-transparent" required>
                 </div>
                 <div>
                     <label for="email" class="block">Email:</label>
-                    <input type="email" name="email" id="email" class="w-full mb-4 text-black rounded shadow-sm focus:ring focus:ring-secondary-600 focus:ring-opacity-75 focus:border-transparent" required>
+                    <input type="email" name="email" id="email" class="w-full mb-4 rounded shadow-sm focus:ring focus:ring-secondary-600 focus:ring-opacity-75 focus:border-transparent" required>
                 </div>
                 <div class="col-span-2">
-                    <label for="subject" class="block">Subject Line:</label>
-                    <input type="text" name="subject" id="subject" class="w-full mb-4 text-black rounded shadow-sm focus:ring focus:ring-secondary-600 focus:ring-opacity-75 focus:border-transparent" required>
+                    <label for="subject" class="block">Subject:</label>
+                    <input type="text" name="subject" id="subject" class="w-full mb-4 rounded shadow-sm focus:ring focus:ring-secondary-600 focus:ring-opacity-75 focus:border-transparent" required>
                 </div>
                 <div class="col-span-2">
                     <label for="message" class="block">Message:</label>
-                    <textarea name="message" id="message" rows="4" class="w-full mb-4 text-black rounded shadow-sm focus:ring focus:ring-secondary-600 focus:ring-opacity-75 focus:border-transparent" required></textarea>
+                    <textarea name="message" id="message" rows="4" class="w-full mb-4 rounded shadow-sm focus:ring focus:ring-secondary-600 focus:ring-opacity-75 focus:border-transparent" required></textarea>
                 </div>
 
                 <div>
-                    <button type="submit" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-secondary-300 bg-transparent rounded border-2 border-secondary-300 hover:bg-secondary-800 hover:border-secondary-800 hover:text-secondary-200 focus:ring-2 focus:outline-none focus:ring-secondary-300">Send!</button>
+                    <button type="submit" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-secondary-500 bg-transparent rounded border-2 border-secondary-500 hover:bg-secondary-800 hover:border-secondary-800 hover:text-secondary-200 focus:ring-2 focus:outline-none focus:ring-secondary-300">Send!</button>
                 </div>
 
                 <input type="hidden" name="accessKey" value="a43f5860-82f2-47c2-8563-794d1983682e">

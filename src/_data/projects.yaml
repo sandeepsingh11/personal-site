@@ -1,0 +1,10 @@
+---
+items:
+  - name: Splat Builder
+    url: "https://github.com/sandeepsingh11/splat-builder"
+    image: "Loid-Forger_Twilight_Spy-x-Family-8.png"
+    desc: A place to build and save your gears and loadouts for the Splatoon 3 video game.
+  - name: Anime Flow
+    url: "https://animeflow.netlify.app/"
+    image: "anime_flow-thumbnail.png"
+    desc: An interactive quiz to find the next anime to watch, based on a popular flowchart.

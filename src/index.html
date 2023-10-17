@@ -85,7 +85,7 @@
                         </a>
 
                         <p class="mb-3">A place to build and save your gears and loadouts for the Splatoon 3 video game.</p>
-                        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-secondary-300 bg-transparent rounded border-2 border-secondary-300 hover:bg-secondary-800 hover:border-secondary-800 hover:text-secondary-200 focus:ring-2 focus:outline-none focus:ring-secondary-300">
+                        <a href="#contact" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-secondary-300 bg-transparent rounded border-2 border-secondary-300 hover:bg-secondary-800 hover:border-secondary-800 hover:text-secondary-200 focus:ring-2 focus:outline-none focus:ring-secondary-300">
                             Read more
                             <i data-feather="arrow-right" stroke="currentColor" stroke-width="2" class="mx-auto"></i>
                             <!-- <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -121,27 +121,31 @@
         <div class="bg-primary-500 text-white p-16" id="contact">
             <h2 class="text-5xl font-medium mb-12 text-center">Contact</h2>
 
-            <form action="" method="post" class="grid grid-cols-2 gap-x-2 w-1/2 mx-auto">
+            <form action="https://api.staticforms.xyz/submit" method="post" class="grid grid-cols-2 gap-x-2 w-1/2 mx-auto">
                 <div>
                     <label for="name" class="block">Name:</label>
-                    <input type="text" name="name" id="name" class="w-full mb-4 text-black rounded shadow-sm focus:ring focus:ring-secondary-600 focus:ring-opacity-75 focus:border-transparent">
+                    <input type="text" name="name" id="name" class="w-full mb-4 text-black rounded shadow-sm focus:ring focus:ring-secondary-600 focus:ring-opacity-75 focus:border-transparent" required>
                 </div>
                 <div>
                     <label for="email" class="block">Email:</label>
-                    <input type="email" name="email" id="email" class="w-full mb-4 text-black rounded shadow-sm focus:ring focus:ring-secondary-600 focus:ring-opacity-75 focus:border-transparent">
+                    <input type="email" name="email" id="email" class="w-full mb-4 text-black rounded shadow-sm focus:ring focus:ring-secondary-600 focus:ring-opacity-75 focus:border-transparent" required>
                 </div>
                 <div class="col-span-2">
                     <label for="subject" class="block">Subject Line:</label>
-                    <input type="text" name="subject" id="subject" class="w-full mb-4 text-black rounded shadow-sm focus:ring focus:ring-secondary-600 focus:ring-opacity-75 focus:border-transparent">
+                    <input type="text" name="subject" id="subject" class="w-full mb-4 text-black rounded shadow-sm focus:ring focus:ring-secondary-600 focus:ring-opacity-75 focus:border-transparent" required>
                 </div>
                 <div class="col-span-2">
                     <label for="message" class="block">Message:</label>
-                    <textarea name="message" id="message" rows="4" class="w-full mb-4 text-black rounded shadow-sm focus:ring focus:ring-secondary-600 focus:ring-opacity-75 focus:border-transparent"></textarea>
+                    <textarea name="message" id="message" rows="4" class="w-full mb-4 text-black rounded shadow-sm focus:ring focus:ring-secondary-600 focus:ring-opacity-75 focus:border-transparent" required></textarea>
                 </div>
 
                 <div>
                     <button type="submit" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-secondary-300 bg-transparent rounded border-2 border-secondary-300 hover:bg-secondary-800 hover:border-secondary-800 hover:text-secondary-200 focus:ring-2 focus:outline-none focus:ring-secondary-300">Send!</button>
                 </div>
+
+                <input type="hidden" name="accessKey" value="a43f5860-82f2-47c2-8563-794d1983682e">
+                <input type="hidden" name="replyTo" value="@">
+                <input type="hidden" name="redirectTo" value="http://localhost:8080/#contact?type=success">
             </form>
         </div>
 

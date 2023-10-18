@@ -10,7 +10,7 @@
         <div>
             <h1 class="text-5xl mb-1">Sandeep Singh</h1>
             <p class="text-lg mb-3">Your favorite brown developer</p>
-            <a href="#contact" class="block w-fit text-white bg-primary-700 hover:bg-primary-800 focus:ring-2 focus:ring-primary-300 font-medium rounded px-3 py-2.5 mr-2 mb-2 focus:outline-none">Ping me!</a>
+            <a href="#contact" class="block w-fit bg-transparent text-primary-500 rounded border-2 border-primary-500 font-medium px-3 py-2.5 mr-2 mb-2 hover:bg-primary-500 focus:ring-2 hover:text-secondary-500 focus:ring-primary-300 focus:outline-none">Ping me!</a>
         </div>
     </div>
 
@@ -107,12 +107,16 @@
             </form>
         </div>
 
-        <footer class="bg-black text-white flex justify-between px-4 py-2">
+        <footer class="bg-secondary-500 text-white flex justify-between px-8 py-2">
             <div>
-                <p>&copy <span id="year"></span></p>
+                <p>&copy <span id="year"></span> Coded by <a href="https://github.com/sandeepsingh11/" target="_blank" rel="noopener noreferrer">Sandeep</a></p>
             </div>
 
-            <div>Coded by <a href="https://github.com/sandeepsingh11/" target="_blank" rel="noopener noreferrer">Sandeep</a></div>
+            <div class="grid grid-cols-3 gap-4">
+                {% for social in socials.items %}
+                    <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer"><i data-feather="{{ social.icon }}" stroke="currentColor" stroke-width="2"></i></a>
+                {% endfor %}
+            </div>
         </footer>
     </main>
 

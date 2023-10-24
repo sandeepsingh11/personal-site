@@ -4,8 +4,8 @@
   "description": "Sandeep's freelancing site!",
   "main": "index.js",
   "scripts": {
-    "dev": "eleventy --serve & tailwindcss -i ./src/css/tailwind.css -o ./_site/css/style.css --watch",
-    "prod": "eleventy & tailwindcss -i ./src/css/tailwind.css -o ./_site/css/style.css --minify",
+    "dev": "ELEVENTY_ENV=dev eleventy --serve & tailwindcss -i ./src/css/tailwind.css -o ./_site/css/style.css --watch",
+    "prod": "ELEVENTY_ENV=prod eleventy & tailwindcss -i ./src/css/tailwind.css -o ./_site/css/style.css --minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sandeep S",

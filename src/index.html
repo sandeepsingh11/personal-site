@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Your favorite brown developer Sandeep! Let me create or ravamp your website! I can make simple, clean websites using minimal code and services.">
+    <meta name="description" content="I'm Sandeep, who deeply develops simple sites! Let me create or ravamp your website! I can make clean websites using minimal code and services.">
     <meta name="keywords" content="Sandeep, website, developer, website developer, designer, website designer, custom website, florida, south florida, latino, espanol">
 
     <!-- social preview -->
     <meta property="og:title" content="Sandeep Web Developer"/>
-    <meta property="og:description" content="Your favorite brown developer Sandeep! Let me create or ravamp your website! I can make simple, clean websites using minimal code and services."/>
+    <meta property="og:description" content="I'm Sandeep, who deeply develops simple sites! Let me create or ravamp your website! I can make clean websites using minimal code and services."/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://sandeepdev.com"/>
     <meta property="og:image" content="/img/personal-site-logo-min.jpg"/>
@@ -34,8 +34,8 @@
 <body>
     <div class="h-screen flex justify-center items-center bg-secondary-500 text-white" id="hero">
         <div>
-            <h1 class="text-5xl mb-1">Sandeep Singh</h1>
-            <p class="text-lg mb-3 text-center md:text-left">Your favorite brown developer</p>
+            <h1 class="text-5xl mb-2">Sandeep Singh</h1>
+            <p class="text-lg mb-3 text-center md:text-left">Deeply developing simple sites</p>
             <a href="#contact" class="block w-fit mx-auto md:mx-0 px-3 py-2.5 bg-transparent text-primary-500 rounded border-2 border-primary-500 font-medium hover:bg-primary-500 focus:ring-2 hover:text-secondary-500 focus:ring-primary-300 focus:outline-none">Ping me!</a>
         </div>
     </div>
@@ -52,7 +52,7 @@
                     <img src="/img/sandeep_portrait.jpg" alt="portrait of Sandeep" class="rounded-md">
                 </div>
                 <div>
-                    <p class="leading-relaxed mb-4">Need a website but don't know who to go to? Have an existing site but want an overhaul? Message me to get started!<br><br>I believe the simple things in life are the most valuable. The same goes for websites. Simple technology and a clean design will have the strongest impression towards your visitors. I take this approach as it saves development time, reduces hosting costs, outputs a lighter website, and dramatically speeds up page load time. Work with me to make the internet great again!</p>
+                    <p class="leading-loose mb-4">Need a website but don't know who to go to? Have an existing site but want an overhaul? Message me to get started!<br><br>I believe the simple things in life are the most valuable. The same goes for websites. Simple technology and a clean design will have the strongest impression towards your visitors. I take this approach as it saves development time, reduces hosting costs, outputs a lighter website, and dramatically speeds up page load time. Work with me to make the internet great again!</p>
 
                     <a href="#contact" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-secondary-500 bg-transparent rounded border-2 border-secondary-500 hover:bg-secondary-700 hover:border-secondary-700 hover:text-secondary-200 focus:ring-2 focus:outline-none focus:ring-secondary-300">
                         Get started!
@@ -72,7 +72,7 @@
                 {% for benefit in benefits.items %}
                     <li class="text-center mb-12 p-2 w-4/5">
                         <i data-feather="{{ benefit.icon }}" stroke="#252422" stroke-width="1" class="w-[100px] h-[100px] mx-auto mb-1"></i>
-                        <h4 class="text-2xl font-medium">{{ benefit.title }}</h4>
+                        <h4 class="mb-3 text-2xl font-medium">{{ benefit.title }}</h4>
                         <p>{{ benefit.desc }}</p>
                     </li>
                 {% endfor %}
@@ -97,7 +97,7 @@
                                 <h4 class="text-2xl font-bold mb-2 tracking-light">{{ project.name }}</h4>
                             </a>
 
-                            <p class="mb-3">{{ project.desc }}</p>
+                            <p class="mb-3 leading-relaxed">{{ project.desc }}</p>
                             <a href="{{ project.url }}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-primary-500 bg-transparent rounded border-2 border-primary-500 hover:bg-primary-600 hover:border-primary-600 hover:text-secondary-500 focus:ring-2 focus:outline-none focus:ring-primary-300">
                                 Visit project
                                 <i data-feather="arrow-right" stroke="currentColor" stroke-width="2" class="mx-auto"></i>
@@ -145,7 +145,7 @@
 
                 <input type="hidden" name="accessKey" value="a43f5860-82f2-47c2-8563-794d1983682e">
                 <input type="hidden" name="replyTo" value="@">
-                <input type="hidden" name="redirectTo" value="/?type=contact_success#contact">
+                <input type="hidden" name="redirectTo" value="{{ project.url }}/?type=contact_success#contact">
             </form>
         </div>
 

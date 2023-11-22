@@ -5,6 +5,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("src/img");
     eleventyConfig.addPassthroughCopy("src/scripts");
+    eleventyConfig.addPassthroughCopy("src/files");
 
     // Input Directory : src, Output directory: _site
     return {

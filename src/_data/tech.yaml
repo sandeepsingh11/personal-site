@@ -1,0 +1,10 @@
+---
+items:
+  - name: 11ty
+    desc: Makes HTML dynamic while still outputting a static website.
+  - name: Tailwind
+    desc: Website styling via utility classes.
+  - name: JavaScript
+    desc: Adds website logic and functionality.
+  - name: Umami
+    desc: Alternative website analytics that respects user data and privacy.

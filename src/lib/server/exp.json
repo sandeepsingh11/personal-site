@@ -1,0 +1,26 @@
+[
+    {
+        "title": "PlanHub",
+        "date_range": "Jun 2021 - Nov 2023",
+        "desc": [
+            "Resolved customer technical issues",
+            "Documented and reported production defects using Jira"
+        ]
+    },
+    {
+        "title": "UCF Arboretum",
+        "date_range": "Feb 2019 - May 2020",
+        "desc": [
+            "Resolved customer technical issues",
+            "Coordinated with marketing to promote the Arboretum"
+        ]
+    },
+    {
+        "title": "BIGEYE Agency",
+        "date_range": "Jun 2018 - Aug 2018",
+        "desc": [
+            "Made promotional email templates using MailChimp",
+            "Programmed a custom Alexa Skill for intern project"
+        ]
+    }
+]

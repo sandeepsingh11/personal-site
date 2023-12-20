@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Lightweight Site",
+        "icon": "feather",
+        "desc": "Incorporating only necessary code, your website will be incredibly light!"
+    },
+    {
+        "title": "Mobile Friendly",
+        "icon": "smartphone",
+        "desc": "Mobile designs isn't a question, it's a must in our modern world."
+    },
+    {
+        "title": "Quick Page Load",
+        "icon": "zap",
+        "desc": "With a lite site connecting to minimal services, page load time is instantaneous."
+    },
+    {
+        "title": "Clean Design",
+        "icon": "pen-tool",
+        "desc": "No need for distracting over-the-top designs."
+    },
+    {
+        "title": "Simple Tech",
+        "icon": "code",
+        "desc": "Simple code makes dev time...simple."
+    },
+    {
+        "title": "Easy Maintanance",
+        "icon": "wrench",
+        "desc": "With less moving parts brings less mantainance."
+    }
+]

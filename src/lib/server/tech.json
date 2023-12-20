@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Sveltekit",
+        "desc": "Offers server-side rendering to make HTML dynamic."
+    },
+    {
+        "name": "Tailwind",
+        "desc": "Website styling via utility classes."
+    },
+    {
+        "name": "JavaScript",
+        "desc": "Adds website logic and functionality."
+    },
+    {
+        "name": "Umami",
+        "desc": "Alternative website analytics that respects user data and privacy."
+    }
+]

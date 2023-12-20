@@ -1,0 +1,10 @@
+---
+items:
+  - name: Splat Builder
+    url: "https://github.com/sandeepsingh11/splat-builder"
+    image: "splat-builder-preview-min.png"
+    desc: A place to build and save your gears and loadouts for the Splatoon 3 video game.
+  - name: Anime Flow
+    url: "https://animeflow.netlify.app/"
+    image: "anime-flow-preview-min.png"
+    desc: An interactive quiz to find the next anime to watch, based on a popular flowchart.

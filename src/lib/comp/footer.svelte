@@ -1,5 +1,4 @@
 <script>
-    import { Mail, Github, Linkedin } from 'lucide-svelte'
     import { onMount } from 'svelte';
 
     export let socials;

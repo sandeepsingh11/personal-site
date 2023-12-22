@@ -2,15 +2,15 @@
     export let projects;
 </script>
 
-<div class="py-16" id="showcase">
+<div class="py-16 bg-secondary-500" id="showcase">
     <div class="relative w-fit mx-auto">
         <span class="block absolute w-40 h-[3px] bg-accent-500 left-0 -bottom-3.5 rounded-full"></span>
-        <h2 class="text-5xl text-secondary-500 font-medium mb-16 text-center">Project showcase</h2>
+        <h2 class="text-5xl text-white font-medium mb-16 text-center">Project showcase</h2>
     </div>
     
-    <div class="flex flex-wrap gap-4 mx-4 lg:mx-20">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-4 lg:mx-20">
         {#each projects as project}  
-            <div class="w-4/5 md:w-2/5 mx-auto bg-secondary-500 text-white border border-black rounded shadow">
+            <div class="bg-white text-black border border-black rounded shadow">
                 <a href="{ project.url }">
                     <img src="/{ project.image }" alt="{ project.image } thumbnail" class="w-full object-center rounded-t ">
                 </a>
@@ -21,7 +21,7 @@
                     </a>
 
                     <p class="mb-3 leading-relaxed">{ project.desc }</p>
-                    <a href="{ project.url }" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-primary-500 bg-transparent rounded border-2 border-primary-500 hover:bg-primary-600 hover:border-primary-600 hover:text-secondary-500 focus:ring-2 focus:outline-none focus:ring-primary-300">
+                    <a href="{ project.url }" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-primary-500 bg-transparent rounded border-2 border-primary-500 hover:bg-primary-500 hover:text-white focus:ring-2 focus:outline-none focus:ring-primary-300">
                         Visit project
                         <i data-feather="arrow-right" stroke="currentColor" stroke-width="2" class="mx-auto"></i>
                         <!-- <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">

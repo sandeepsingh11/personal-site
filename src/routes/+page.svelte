@@ -10,25 +10,25 @@
     export let data;
 </script>
 
-<!-- hero -->
-<Hero />
-
-<div class="bg-primary-500 text-secondary-500">
+<div class="bg-gradient-to-b from-black to-primary-900 text-white">
+    <!-- hero -->
+    <Hero />
+    
     <!-- about -->
     <About />
-
-    <!-- website benefits -->
-    <Benefits benefits={data.benefits} />
-
-    <!-- project showcase -->
-    <Projects projects={data.projects} />
-
-    <!-- experience -->
-    <Exp experience={data.experience} tech={data.tech} />
-
-    <!-- contact -->
-    <Contact />
-
-    <!-- footer -->
-    <Footer socials={data.socials} />
 </div>
+
+<!-- project showcase -->
+<Projects projects={data.projects} />
+
+<!-- website benefits -->
+<Benefits benefits={data.benefits} />
+
+<!-- experience -->
+<Exp experience={data.experience} tech={data.tech} />
+
+<!-- contact -->
+<Contact />
+
+<!-- footer -->
+<Footer socials={data.socials} />

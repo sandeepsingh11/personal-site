@@ -9,7 +9,7 @@
     })
 </script>
 
-<footer class="bg-secondary-500 text-white flex justify-between px-4 md:px-8 py-2">
+<footer class="bg-black text-white flex justify-between px-4 md:px-8 py-2">
     <div>
         <p>&copy <span id="year"></span> Coded by <a href="https://github.com/sandeepsingh11/" target="_blank" rel="noopener noreferrer">Sandeep</a></p>
     </div>

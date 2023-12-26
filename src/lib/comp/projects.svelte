@@ -2,7 +2,7 @@
     export let projects;
 </script>
 
-<div class="py-16 bg-secondary-500" id="showcase">
+<div class="pt-[200px] pb-24 bg-secondary-500" id="showcase">
     <div class="relative w-fit mx-auto">
         <span class="block absolute w-40 h-[3px] bg-accent-500 left-0 -bottom-3.5 rounded-full"></span>
         <h2 class="text-5xl text-white font-medium mb-16 text-center">Project showcase</h2>

@@ -11,7 +11,7 @@
         <h2 class="text-5xl text-black font-medium mb-16 text-center">Your website could be</h2>
     </div>
 
-    <ul class="grid grid-cols-2 md:grid-cols-3 justify-items-center leading-relaxed">
+    <ul class="grid grid-cols-1 md:grid-cols-3 justify-items-center leading-relaxed">
         {#each benefits as benefit}
             <li class="bg-primary-600 w-4/5 mb-12 py-4 px-2 border-2 border-black rounded text-center text-white">
                 {#if benefit.icon === 'feather'}

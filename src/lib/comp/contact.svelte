@@ -1,4 +1,5 @@
 <script>
+    import { Rocket } from "lucide-svelte";
     import { onMount } from "svelte";
     
     onMount(() => {
@@ -45,7 +46,7 @@
         <input type="text" name="honeypot" style="display: none;">
 
         <div>
-            <button type="submit" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-accent-500 bg-transparent rounded border-2 border-accent-500 hover:bg-accent-500 hover:border-accent-500 hover:text-black focus:ring-2 focus:outline-none focus:ring-accent-300">Send!</button>
+            <button type="submit" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-accent-500 bg-transparent rounded border-2 border-accent-500 hover:bg-accent-500 hover:border-accent-500 hover:text-black focus:ring-2 focus:outline-none focus:ring-accent-300">Send! <Rocket size=16 /></button>
         </div>
 
         <input type="hidden" name="accessKey" value="a43f5860-82f2-47c2-8563-794d1983682e">

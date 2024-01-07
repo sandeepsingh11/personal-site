@@ -5,31 +5,87 @@
     export let benefits;
 </script>
 
-<div class="py-16 bg-white" id="benefits">
-    <div class="relative w-fit mx-auto">
-        <span class="block absolute w-40 h-[3px] bg-accent-500 left-0 -bottom-3.5 rounded-full"></span>
-        <h2 class="text-5xl text-black font-medium mb-16 text-center">Your website could be</h2>
+<section id="benefits">
+    <div id="benefits-heading">
+        <span></span>
+        <h2>Your website could be</h2>
     </div>
 
-    <ul class="grid grid-cols-1 md:grid-cols-3 justify-items-center leading-relaxed">
+    <ul class="grid leading-relaxed" id="benefits-grid">
         {#each benefits as benefit}
             <li class="bg-primary-600 w-4/5 mb-12 py-4 px-2 border-2 border-black rounded text-center text-white">
                 {#if benefit.icon === 'feather'}
-                    <Feather size=100 strokeWidth=1 class="mx-auto mb-1" />
+                    <Feather size=100 strokeWidth=1 style="margin-bottom: 0.25rem" />
                 {:else if benefit.icon === 'smartphone'}
-                    <Smartphone size=100 strokeWidth=1 class="mx-auto mb-1" />
+                    <Smartphone size=100 strokeWidth=1 style="margin-bottom: 0.25rem" />
                 {:else if benefit.icon === 'zap'}
-                    <Zap size=100 strokeWidth=1 class="mx-auto mb-1" />
+                    <Zap size=100 strokeWidth=1 style="margin-bottom: 0.25rem" />
                 {:else if benefit.icon === 'pen'}
-                    <Pen size=100 strokeWidth=1 class="mx-auto mb-1" />
+                    <Pen size=100 strokeWidth=1 style="margin-bottom: 0.25rem" />
                 {:else if benefit.icon === 'code'}
-                    <Code size=100 strokeWidth=1 class="mx-auto mb-1" />
+                    <Code size=100 strokeWidth=1 style="margin-bottom: 0.25rem" />
                 {:else if benefit.icon === 'wrench'}
-                    <Wrench size=100 strokeWidth=1 class="mx-auto mb-1" />
+                    <Wrench size=100 strokeWidth=1 style="margin-bottom: 0.25rem" />
                 {/if}
-                <h4 class="mb-3 text-xl md:text-2xl font-medium">{ benefit.title }</h4>
-                <p>{ benefit.desc }</p>
+                <hgroup>
+                    <h4 class="mb-3 text-xl md:text-2xl font-medium">{ benefit.title }</h4>
+                    <p>{ benefit.desc }</p>
+                </hgroup>
             </li>
         {/each}
     </ul>
-</div>
+</section>
+
+<style lang="scss">
+    #benefits {
+        background-color: #F7F7FF;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    #benefits-heading {
+        position: relative;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+
+        span {
+            display: block;
+            position: absolute;
+            bottom: -0.875rem;
+            left: 0;
+            width: 10rem;
+            height: 3px;
+            border-radius: 9999px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #22333b;
+        }
+    }
+
+    #benefits-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 1rem;
+        padding: 0 1rem;
+        color: #22333b;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+    
+            h4 {
+                color: inherit;
+            }
+        }
+    }
+</style>

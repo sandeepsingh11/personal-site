@@ -1,35 +1,95 @@
 <script>
+    import { MoveUpRight } from "lucide-svelte";
+
     export let projects;
 </script>
 
-<div class="pt-[200px] pb-24 bg-secondary-500" id="showcase">
-    <div class="relative w-fit mx-auto">
-        <span class="block absolute w-40 h-[3px] bg-accent-500 left-0 -bottom-3.5 rounded-full"></span>
-        <h2 class="text-5xl text-white font-medium mb-16 text-center">Project showcase</h2>
+<section class="bg-secondary-500 container" id="projects">
+    <div id="projects-heading">
+        <span class="bg-accent-500"></span>
+        <h2>Project showcase</h2>
     </div>
     
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-4 lg:mx-20">
+    <div class="grid" id="projects-grid">
         {#each projects as project}  
-            <div class="bg-white text-black border border-black rounded shadow">
+            <div class="shadow" id="projects-grid-item">
                 <a href="{ project.url }">
                     <img src="/{ project.image }" alt="{ project.image } thumbnail" class="w-full object-center rounded-t ">
                 </a>
 
-                <div class="p-4">
+                <div id="projects-grid-item-body">
                     <a href="{ project.url }">
-                        <h4 class="text-2xl font-bold mb-2 tracking-light">{ project.name }</h4>
+                        <h4>{ project.name }</h4>
                     </a>
 
-                    <p class="mb-3 leading-relaxed">{ project.desc }</p>
-                    <a href="{ project.url }" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-primary-500 bg-transparent rounded border-2 border-primary-500 hover:bg-primary-500 hover:text-white focus:ring-2 focus:outline-none focus:ring-primary-300">
-                        Visit project
+                    <p>{ project.desc }</p>
+                    <a href="{ project.url }" role="button" class="outline">Visit project <MoveUpRight size=16 /></a>
+                    <!-- <a href="{ project.url }" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-primary-500 bg-transparent rounded border-2 border-primary-500 hover:bg-primary-500 hover:text-white focus:ring-2 focus:outline-none focus:ring-primary-300">
+                        Visit project <MoveUpRight size=16 />
                         <i data-feather="arrow-right" stroke="currentColor" stroke-width="2" class="mx-auto"></i>
-                        <!-- <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                        </svg> -->
-                    </a>
+                    </a> -->
                 </div>
             </div>
         {/each}
     </div>
-</div>
+</section>
+
+<style lang="scss">
+    #projects {
+        padding-top: 100px;
+        padding-bottom: 4rem;
+    }
+
+    #projects-heading {
+        position: relative;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+
+        span {
+            display: block;
+            position: absolute;
+            bottom: -0.875rem;
+            left: 0;
+            width: 10rem;
+            height: 3px;
+            border-radius: 9999px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    #projects-grid {
+        gap: 1rem;
+    }
+
+    #projects-grid-item {
+        background-color: #F7F7FF;
+        color: #22333b;
+        border: 1px solid #22333b;
+        border-radius: 0.25rem;
+
+        img {
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+        }
+    }
+
+    #projects-grid-item-body {
+        padding: 1rem;
+
+        h4 {
+            color: #22333b;
+            text-decoration: underline;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 0.75rem;
+            line-height: 1.625;
+            color: inherit;
+        }
+    }
+</style>

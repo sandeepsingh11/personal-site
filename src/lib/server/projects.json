@@ -1,6 +1,6 @@
 [
     {
-        "name": "gallo_diario",
+        "name": "seth_diario",
         "url": "https://legendary-churros-f606d9.netlify.app/",
         "image": "client-artwork-screenshot-min.png",
         "desc": "Artwork website for a client. Integrated a newsletter widget and CMS portal."
@@ -9,7 +9,7 @@
         "name": "Splat Builder",
         "url": "https://github.com/sandeepsingh11/splat-builder",
         "image": "splat-builder-preview-min.png",
-        "desc": "A place to build and save your gears and loadouts for the Splatoon 3 video game."
+        "desc": "A place to build and save your gears and loadouts for the Splatoon 3 video game. (in progress)"
     },
     {
         "name": "Anime Flow",

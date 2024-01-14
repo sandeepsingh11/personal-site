@@ -1,7 +1,7 @@
 <div class="relative h-screen flex justify-center items-center" id="hero">
     <div>
         <h1 class="text-5xl mb-2 text-center">Sandeep Singh</h1>
-        <p class="text-lg mb-3 text-center md:text-left">Developing deeply simple sites</p>
+        <p class="text-lg mb-3 text-center md:text-left">Building stellar websites</p>
         <a href="#contact" class="block w-fit mx-auto md:mx-0 px-3 py-2.5 bg-transparent hover:bg-accent-500 text-accent-500 hover:text-black rounded border-2 border-accent-500 font-medium focus:ring-2 focus:ring-accent-300 focus:outline-none">Ping me!</a>
     </div>
 

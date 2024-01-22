@@ -62,6 +62,7 @@
 
 <style lang="scss">
     #exp {
+        background-color: #1a5270;
         padding: 4rem 1rem;
 
         @media screen and (min-width: 768px) {
@@ -123,7 +124,7 @@
                     margin-left: 32px;
                     margin-right: 2.5rem;
                     margin-bottom: 2rem;
-                    padding: 0.5rem;
+                    padding: 1rem;
                     border: 2px solid #F7F7FF;
                     border-radius: 0.25rem;
 

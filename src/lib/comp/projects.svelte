@@ -4,7 +4,7 @@
     export let projects;
 </script>
 
-<section class="bg-secondary-500 container" id="projects">
+<section id="projects">
     <div id="projects-heading">
         <span class="bg-accent-500"></span>
         <h2>Project showcase</h2>
@@ -23,7 +23,7 @@
                     </a>
 
                     <p>{ project.desc }</p>
-                    <a href="{ project.url }" role="button" class="outline">Visit project <MoveUpRight size=16 /></a>
+                    <a href="{ project.url }" role="button">Visit project <MoveUpRight size=16 /></a>
                     <!-- <a href="{ project.url }" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-primary-500 bg-transparent rounded border-2 border-primary-500 hover:bg-primary-500 hover:text-white focus:ring-2 focus:outline-none focus:ring-primary-300">
                         Visit project <MoveUpRight size=16 />
                         <i data-feather="arrow-right" stroke="currentColor" stroke-width="2" class="mx-auto"></i>
@@ -36,7 +36,8 @@
 
 <style lang="scss">
     #projects {
-        padding-top: 100px;
+        background-color: var(--secondary);
+        padding-top: calc(4rem + 100px);
         padding-bottom: 4rem;
     }
 

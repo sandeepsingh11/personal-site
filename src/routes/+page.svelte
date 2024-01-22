@@ -41,17 +41,20 @@
 <style lang="scss">
     #hero-container {
         position: relative;
+        background: rgb(34,51,59);
+        background: linear-gradient(180deg, rgba(34,51,59,1) 0%, rgba(14,56,84,1) 100%);
     }
 
     #transition-1 {
         position: absolute;
-        bottom: -100px;
+        top: 100%;
         left: 0;
         width: 100%;
         background-repeat: no-repeat;
 
         img {
-            widows: 100%;
+            width: 100%;
+            border-radius: 0;
         }
     }
 </style>

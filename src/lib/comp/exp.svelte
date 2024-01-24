@@ -62,7 +62,7 @@
 
 <style lang="scss">
     #exp {
-        background-color: #1a5270;
+        background-color: var(--secondary);
         padding: 4rem 1rem;
 
         @media screen and (min-width: 768px) {
@@ -103,6 +103,7 @@
     
             @media screen and (min-width: 1440px) {
                 margin-right: 3rem;
+                margin-bottom: 0;
             }
     
             #timeline-line {
@@ -165,26 +166,13 @@
                 }
 
                 hgroup {
-                    width: 80%;
                     margin-left: auto;
                     margin-right: auto;
                     margin-bottom: 1rem;
-
-                    @media screen and (min-width: 768px) {
-                        width: 100%;
-                    }
                 }
             }
 
             #resume-container {
-                width: 80%;
-                margin-left: auto;
-                margin-right: auto;
-
-                @media screen and (min-width: 768px) {
-                    width: 100%;
-                }
-
                 a {
                     width: 100%;
                     margin-bottom: 1rem;

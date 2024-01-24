@@ -1,10 +1,15 @@
 [data-theme="dark"] {
-    --primary: #47a8bd;
-    --secondary: #6e7dab;
+    --primary: #0e3854;
+    --primary-hover: #1a5270;
+    --secondary: #596899;
     --accent: #ffc857;
     // --primary-focus: rgba(16, 149, 193, 0.25)
     --black: #22333b;
     --white: #F7F7FF;
+    --color: hsl(205, 16%, 90%);
+    --muted-color: hsl(205, 10%, 85%);
+    --h3-color: #e1e6eb;
+    --h4-color: #e1e6eb;
     --form-element-background-color: var(--white);
     --form-element-color: var(--black);
     --form-element-active-border-color: var(--black);
@@ -16,7 +21,7 @@
 }
 
 [role="button"]:focus {
-    --box-shadow: var(--button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0)),0 0 0 var(--outline-width) var(--accent);
+    --box-shadow: var(--button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0)),0 0 0 var(--outline-width) var(--primary);
 }
 
 [role="button"].outline {
@@ -53,6 +58,10 @@ a {
 a:is([aria-current],:hover,:active,:focus) {
     --color: var(--accent);
     filter: brightness(120%);
+}
+
+--h3-color, --h4-color {
+    
 }
 
 ul {

@@ -38,7 +38,7 @@
 
 <style lang="scss">
     #benefits {
-        background-color: #F7F7FF;
+        background-color: #0e3854;
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
@@ -61,7 +61,6 @@
 
         h2 {
             text-align: center;
-            color: #22333b;
         }
     }
 
@@ -69,12 +68,11 @@
         grid-template-columns: repeat(1, minmax(0, 1fr));
         gap: 1rem;
         padding: 0 1rem;
-        color: #22333b;
         text-align: center;
 
         @media screen and (min-width: 768px) {
             grid-template-columns: repeat(3, minmax(0, 1fr));
-            width: 80%;
+            width: 85%;
             margin-left: auto;
             margin-right: auto;
             padding: 0;
@@ -82,9 +80,23 @@
 
         li {
             list-style: none;
+            padding: 1rem 0;
+
+            @media screen and (min-width: 768px) {
+                padding: 1rem 0.5rem;
+            }
     
-            h4 {
-                color: inherit;
+            hgroup {
+                margin-bottom: 0;
+
+                h4 {
+                    color: inherit;
+                    margin-bottom: 0.25rem;
+                }
+
+                p {
+                    margin-bottom: 0;
+                }
             }
         }
     }

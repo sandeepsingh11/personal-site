@@ -11,6 +11,14 @@ const config = {
   },
 
   preprocess: [vitePreprocess({})],
+  prerender: {
+    crawl: true,
+    enabled: true,
+    force: true,
+    pages: ['*'],
+    onError: 'continue',
+		entries: ['*'],
+  }
 };
 
 export default config;

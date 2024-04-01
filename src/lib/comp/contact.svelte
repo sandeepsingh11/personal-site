@@ -2,6 +2,8 @@
     import { Rocket } from "lucide-svelte";
     import { onMount } from "svelte";
     
+    export const prerender = true;
+    
     onMount(() => {
         // get url params
         const urlParams = new URLSearchParams(window.location.search);

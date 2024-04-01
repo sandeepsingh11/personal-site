@@ -25,7 +25,12 @@
 
     <div id="email_success"></div>
 
-    <form action="/?type=contact_success#contact" method="post" data-netlify="true" class="grid grid-cols-1 md:grid-cols-2 gap-x-2 w-4/5 lg:w-1/2 mx-auto text-black">
+    <form
+        name="contact"
+        method="post" 
+        data-netlify="true" 
+        class="grid grid-cols-1 md:grid-cols-2 gap-x-2 w-4/5 lg:w-1/2 mx-auto text-black"
+    >
         <div>
             <label for="name" class="block text-white">Name:</label>
             <input type="text" name="name" id="name" class="w-full mb-4 rounded shadow-sm focus:ring focus:ring-secondary-600 focus:ring-opacity-75 focus:border-transparent" required>
